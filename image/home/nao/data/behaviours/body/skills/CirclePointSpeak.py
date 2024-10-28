@@ -29,7 +29,7 @@ class ApproachAndReportBall(BehaviourTask):
     def _reset(self):
         # Initialize variables and timers
         self._current_sub_task = "ApproachBall"  
-        self._start_angle = None
+        self._start_angle = None  
         self._angle_covered = 0   
         # 5 seconds for pointing 
         self._pointTimer = Timer(timeTarget = 5000000)
