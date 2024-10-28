@@ -1,10 +1,10 @@
 from BehaviourTask import BehaviourTask
 from body.skills.CircleToPose import CircleToPose
 from body.skills.ApproachBall import ApproachBall  
+from body.skills.RaiseArm import RaiseArm
 from util.Global import ballWorldPos, ballDistance, myPos
 from util.MathUtil import normalisedTheta
 from util.Timer import Timer
-from util.actioncommand import raiseArm
 from math import pi
 import robot
 
@@ -14,9 +14,6 @@ import robot
     Credit: RunSwift website and debugging support from GPT.
 
 """
-class RaiseArm(BehaviourTask):
-    def _tick(self):
-        self.world.b_request.actions.body = raiseArm()
 
 class ApproachAndReportBall(BehaviourTask):
     def _initialise_sub_tasks(self):
